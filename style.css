@@ -5,11 +5,43 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to bottom, #591C27, #8C2A3C, #591C27);
+  color:whitesmoke;
+  font-size: 20px;
 }
 
 form {
   display: flex;
   flex-flow: column;
+}
+
+div#título {
+  margin: 10% 0;
+  text-align: center;
+  width: 300px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+div#formulário {
+  background-color: #591C27;
+  border-radius: 15px;
+}
+
+input {
+  border-radius: 5px;
+  height: 1.5em;
+  border: solid #2bff00 2px;
+}
+
+input:hover {
+  border: solid #8C2A3C 2px;
+}
+
+input, button {
+  width: 85%;
+  border: none;
+  background-color:whitesmoke;
 }
 
 input,
@@ -18,7 +50,33 @@ a {
   outline: none;
 }
 
+a {
+  color:whitesmoke;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 form .linha {
   display: flex;
-  flex-flow: row; /* column = form vertical, row = form horizontal */
+  flex-flow: column; /* column = form vertical, row = form horizontal */
+  margin-bottom: 5%;
+}
+
+div.linha > input, div.linha > label{
+  position: relative;
+  left: 6.5%;
+}
+
+button {
+  margin-top: 5%;
+  position: relative;
+  left: 7%;
+  height: 4em;
+  background-color: #260B10;
+  color: white;
+  border-radius: 15px;
 }
