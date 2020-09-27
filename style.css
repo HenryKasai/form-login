@@ -31,11 +31,11 @@ div#formulário {
 input {
   border-radius: 5px;
   height: 1.5em;
-  border: solid #2bff00 2px;
+  border: solid #591C27 2px;
 }
 
 input:hover {
-  border: solid #8C2A3C 2px;
+  border: solid #BF3B53 2px;
 }
 
 input, button {
@@ -54,6 +54,7 @@ a {
   color:whitesmoke;
   text-decoration: none;
   text-align: center;
+  font-size: 16px;
 }
 
 a:hover {
@@ -75,8 +76,15 @@ button {
   margin-top: 5%;
   position: relative;
   left: 7%;
-  height: 4em;
+  height: 3em;
   background-color: #260B10;
   color: white;
   border-radius: 15px;
+  font-size: 16px;
+}
+
+button:hover {
+  position: relative;
+  right: 10%;
+  bottom: 10%;
 }
