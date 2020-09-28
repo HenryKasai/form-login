@@ -29,7 +29,7 @@ div#título {
 div#formulário {
   background-color: #591C27;
   border-radius: 15px;
-  width: 20%;
+  min-width: 250px;
   box-shadow: #260B10 2px 2px 5px, -2px -2px 5px #260B10;
 }
 
@@ -96,4 +96,10 @@ button:hover {
   transition: all 0.3s;
   transform: translate(-5px, -5px);
   box-shadow: 5px 5px 5px 0 #1a070b;
+}
+
+@media (min-width: 768px) {
+  div#formulário {
+    width: 350px  ;
+  }
 }
