@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
 body {
   margin: 0;
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to bottom, #591C27, #8C2A3C, #591C27);
   color:whitesmoke;
   font-size: 20px;
+  font-family: 'Titillium Web';
 }
 
 form {
@@ -18,20 +20,27 @@ form {
 div#título {
   margin: 10% 0;
   text-align: center;
-  width: 300px;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
+  letter-spacing: 5px;
+  text-shadow: #1a070b 3px 3px 3px; 
 }
 
 div#formulário {
   background-color: #591C27;
   border-radius: 15px;
+  width: 20%;
+  box-shadow: #260B10 2px 2px 5px, -2px -2px 5px #260B10;
 }
 
 input {
-  border-radius: 5px;
-  height: 1.5em;
+  border-radius: 10px;
+  margin: 2% 0;
+}
+
+input[type="text"], input[type="password"]{
   border: solid #591C27 2px;
+  height: 2.5em;
 }
 
 input:hover {
@@ -84,7 +93,7 @@ button {
 }
 
 button:hover {
-  position: relative;
-  right: 10%;
-  bottom: 10%;
+  transition: all 0.3s;
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 5px 0 #1a070b;
 }
